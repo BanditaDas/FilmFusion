@@ -50,7 +50,7 @@ function Popular() {
   }, [cat])
 
   return pop.length > 0 ? (
-    <div className='h-screen w-screen'>
+    <div className='w-screen bg-zinc-900 h-fit'>
       <div className="px-5 w-full flex items-center">
         <h1 className='text-2xl text-zinc-400 font-semibold'>
           <i onClick={() => navigate(-1)} className="hover:text-[#6556CD] ri-arrow-left-line mr-5"></i>
