@@ -15,6 +15,7 @@ function Trending() {
   const [trend, setternd]= useState([])
   const [pg, setpg] = useState(1)
   const [hasMore, sethasMore] = useState(true)
+  
   document.title = "TRENDING | " + cat.toLocaleUpperCase()
 
 

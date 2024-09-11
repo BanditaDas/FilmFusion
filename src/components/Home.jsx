@@ -6,6 +6,7 @@ import axios from '../utils/axios'
 import Header from './templates/Header'
 import Dropdown from './templates/Dropdown'
 import Loading from './Loading'
+import Notfound from './Notfound'
 
 function Home() {
     document.title = "| HOME |"
@@ -13,6 +14,7 @@ function Home() {
     const [wallpaper, setwallpaper] = useState(null)
     const [ternd, setternd] = useState(null)
     const [cat, setcat] = useState("all")
+    const [alert, setalert] = useState(null)
 
     const Getwall = async() => {
       try{
@@ -20,7 +22,14 @@ function Home() {
         let rd = d.data.results[(Math.random()* d.data.results.length).toFixed()]
         setwallpaper(rd)
       }catch(e){
-        console.log(e);
+        console.log(e.message);
+        console.log(e.code);
+        if(e.message === "Network Error" && e.code === "ERR_NETWORK"){
+            setalert(true)
+        }
+        else{
+          setalert(false)
+        }
       }
     }
 
@@ -39,7 +48,8 @@ function Home() {
       Gettred()
     },[cat])
 
-  return wallpaper && ternd ? (
+
+  return alert ? <Notfound /> : wallpaper && ternd ? (
     <>
         <Sidenav />
         <div className="w-[80%] h-full overflow-x-hidden overflow-auto">
