@@ -1,8 +1,13 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# FilmFusion
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a Movie and TV Shows Database App designed to provide users with a comprehensive platform to search, browse, and view details about various movies and TV shows. The app is designed with an intuitive interface, making it easy to find information about your favorite content, including ratings, release dates, genres, and more.
+
+## 🔗 Link
+
+```http
+  film-fusion-navy.vercel.app
+```
+
+Click here to ➦ [Visit](film-fusion-navy.vercel.app)
