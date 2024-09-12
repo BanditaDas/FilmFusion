@@ -1,7 +1,5 @@
-import React, { lazy, useEffect, useState } from 'react'
+import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-
-// import Home from './components/Home'
 import Home from './components/Home';
 import Trending from './components/Trending';
 import Popular from './components/Popular'
@@ -16,30 +14,6 @@ import Notfound from './components/Notfound';
 import Loading from './components/Loading';
 import axios from 'axios';
 function App() {
-
-  // const [isJioNetwork, setIsJioNetwork] = useState(false);
-  // const [ipInfo, setIpInfo] = useState(null);
-
-  // useEffect(() => {
-  //   // Fetch the user's IP information using ipinfo.io
-  //   const fetchIpInfo = async () => {
-  //     try {
-  //       const response = await axios.get(`https://ipinfo.io?token=ea196107a5fec5`);
-  //       setIpInfo(response.data);
-  //       console.log(response);
-        
-
-  //       // Check if the ISP is Jio
-  //       if (response.data.org && response.data.org.toLowerCase().includes('jio')) {
-  //         setIsJioNetwork(true);
-  //       }
-  //     } catch (error) {
-  //       console.error('Error fetching IP info:', error);
-  //     }
-  //   };
-
-  //   fetchIpInfo();
-  // }, []);
 
   return (
     <div className='bg-[#1F1E24] w-full h-screen flex'>
