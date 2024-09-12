@@ -10,4 +10,3 @@ This is a Movie and TV Shows Database App designed to provide users with a compr
   film-fusion-navy.vercel.app
 ```
 
-Click here to ➦ [Visit](film-fusion-navy.vercel.app)
